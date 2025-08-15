@@ -31,6 +31,19 @@
         
     }
 
+    // Reactive Example-02
+    let newState = reactive({val : {counter : 0}, users : ["nasir", "ali"]})
+    function countNumber() {
+        newState.val.counter++
+    }
+    function changeUsers() {
+        newState.users[0] = "Muhammad"
+        newState.users[1] = "Ali"
+    }
+    function addUsers() {
+        newState.users.push("Nasir Khan")
+    }
+
 </script>
 
 
@@ -52,13 +65,20 @@
      <img :src="Image" :width="ImageWidth" :height="ImageHeight" >
 
 
-    <!-- 03 - Reactive Example 1 -->
+    <!-- 03 - Reactive Example-1 -->
     <p>Count is : {{ state.count }}</p>
     <p>Name is : {{ state.user.name }}</p>
     <p>Age is : {{ state.user.age }}</p>
     <button @click="countUpdate">Count</button>
     <button @click="update">Change Name</button>
-    
+
+    <!-- 03 - Reactive Example-2 -->
+    <h1>Count is {{ newState.val.counter }}</h1>
+    <h2>Name are : {{ newState.users }}</h2>
+
+    <button @click="countNumber">Counter</button>
+    <button @click="changeUsers">Change User</button>
+    <button @click="addUsers">Add users</button>
 </template>
 
 
