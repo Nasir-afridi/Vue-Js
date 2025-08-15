@@ -1,84 +1,15 @@
-<script setup>
-
-    
-    // 01 - Text interpolation
-    const myMessage = 'Yellow Color';
-    function add (a, b ) {
-        return a + b
-    }
-
-    // 02 - Attribute bindings Variable: 
-    const myChannel = "https://www.youtube.com/watch?v=NcnfsE1B51o&list=PLEPye7A7EcQaJupAt4yTtJx3K-uUuj8si&index=3&ab_channel=SuperSimpleDev"
-    const Image = "/favicon.ico"
-    const ImageWidth = 400
-    const ImageHeight = 400
-
-
-    // 03 Reactive:  Example1
-    import { reactive } from 'vue';
-    let state = reactive({count : 0, user : {name : 'Nasir', age : 20}})
-    function countUpdate(){
-        state.count++
-    }
-    function update() {
-        if(state.user.name === "Nasir") {
-            state.user.name = "ali"
-            state.user.age = 90
-        }else {
-            state.user.name = 'Nasir'
-            state.user.age =20
-        }
-        
-    }
-
-    // Reactive Example-02
-    let newState = reactive({val : {counter : 0}, users : ["nasir", "ali"]})
-    function countNumber() {
-        newState.val.counter++
-    }
-    function changeUsers() {
-        newState.users[0] = "Muhammad"
-        newState.users[1] = "Ali"
-    }
-    function addUsers() {
-        newState.users.push("Nasir Khan")
-    }
-
+<script setup>    
+    import TextInterpolation from './01-TextInterpolation.vue';
+    import AttributeBinding from './02-AttributeBinding.vue';
+    import Reactive from './03-Reactive.vue';
 </script>
 
 
 
 <template>
-
-
-    <!-- 01-Text interpolation -->
-     <h1>     
-        Hello World {{ myMessage }}
-        {{ 2 + 2 }} = {{ 22 + 22 }}
-        <br>
-        {{ add(2, 4)}}
-    </h1>
-
-
-    <!-- 02-attribute binding : for making the variable dynamic -->
-     <a :href="myChannel">Youtube channel</a>       
-     <img :src="Image" :width="ImageWidth" :height="ImageHeight" >
-
-
-    <!-- 03 - Reactive Example-1 -->
-    <p>Count is : {{ state.count }}</p>
-    <p>Name is : {{ state.user.name }}</p>
-    <p>Age is : {{ state.user.age }}</p>
-    <button @click="countUpdate">Count</button>
-    <button @click="update">Change Name</button>
-
-    <!-- 03 - Reactive Example-2 -->
-    <h1>Count is {{ newState.val.counter }}</h1>
-    <h2>Name are : {{ newState.users }}</h2>
-
-    <button @click="countNumber">Counter</button>
-    <button @click="changeUsers">Change User</button>
-    <button @click="addUsers">Add users</button>
+    <TextInterpolation />
+    <AttributeBinding />
+    <Reactive /> 
 </template>
 
 
