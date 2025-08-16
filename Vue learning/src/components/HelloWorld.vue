@@ -6,6 +6,7 @@
     import Computed from './05-Computed.vue';
     import ConditionalRendering from './06-ConditionalRendering.vue';
     import vShow from './07-vShow.vue'
+    import vFor from './08-vFor.vue'
 </script>
 
 
@@ -18,6 +19,7 @@
     <Computed />
     <ConditionalRendering />
     <vShow />
+    <vFor />
 </template>
 
 
