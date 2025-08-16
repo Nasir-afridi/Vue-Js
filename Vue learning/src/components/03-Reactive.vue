@@ -1,3 +1,5 @@
+<!-- Reactive mein sirf objects arrays ko rakh sakty hain ham isko direct access krskty hain  -->
+
 <script setup>
      // 03 Reactive:  Example1
     import { reactive } from 'vue';
