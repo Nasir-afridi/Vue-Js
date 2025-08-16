@@ -1,3 +1,5 @@
+<!-- Js code ko html mein inject krny kk liye ham interpolation ka use krty hain -->
+
 <script setup>
     const myMessage = 'Yellow Color';
     function add (a, b ) {
