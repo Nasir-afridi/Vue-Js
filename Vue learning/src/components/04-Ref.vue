@@ -1,3 +1,8 @@
+<!-- Ref mein ham primitive data types or object array saab kk sath kaam krskty hain ismein aik special box banjata hai jisko
+ ham .value kaihty hain yane koi be value access krne ho to isko likhty hain last mein function kkk andrr orr agrr eventhandler
+ use krrhy ho to pher vue isko automaticlly unwrap krdaita hai isko likhny kii zroorat nahe leken function mein must wrna ye 
+ error dyga. -->
+
 <script setup>
     import { ref } from 'vue';
     // 1.
