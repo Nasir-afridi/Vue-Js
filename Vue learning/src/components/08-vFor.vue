@@ -1,3 +1,8 @@
+<!-- 
+    ye for loop hai leken vue mein v-for hota hai iska method ye hai kkk array ko kisi variable syy guzarna prta hai takay osky 
+    indexes aik aik krky or variable mein store hoon orr screen prr print hoon jaisy kkk neechay diya gya
+    
+-->
 
 <script setup>
     // Example : 1
