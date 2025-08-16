@@ -5,6 +5,7 @@
     import Ref from './04-Ref.vue';
     import Computed from './05-Computed.vue';
     import ConditionalRendering from './06-ConditionalRendering.vue';
+    import vShow from './07-vShow.vue'
 </script>
 
 
@@ -16,6 +17,7 @@
     <Ref />
     <Computed />
     <ConditionalRendering />
+    <vShow />
 </template>
 
 
