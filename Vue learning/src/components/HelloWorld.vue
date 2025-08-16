@@ -15,6 +15,7 @@
     <Reactive /> 
     <Ref />
     <Computed />
+    <ConditionalRendering />
 </template>
 
 
