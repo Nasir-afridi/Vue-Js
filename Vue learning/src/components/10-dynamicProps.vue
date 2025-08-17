@@ -1,6 +1,6 @@
 <script setup>
     // Example-1
-    const value = defineProps(['firstName', 'lastName'])
+    const value = defineProps(['firstName', 'lastName', 'val'])
 </script>
 
 
@@ -8,6 +8,7 @@
     <!-- Example-1 -->
     <h1>First Name : {{ value.firstName }}</h1>
     <h1>Last Name : {{ value.lastName }}</h1>
+    <h1>Result is : {{ value.val }}</h1>
 </template>
 
 j
