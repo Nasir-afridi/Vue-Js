@@ -9,6 +9,13 @@
     import vFor from './08-vFor.vue'
     import Props from './09-Props.vue'
     import dynamicProps from './10-dynamicProps.vue'
+
+
+    // Example - 1
+    import { ref } from 'vue';
+
+    const firstName = ref('Muhammad');
+    const lastName = ref('Nasir')
 </script>
 
 
@@ -23,7 +30,12 @@
     <vShow />
     <vFor />
     <Props name="jordan"/>
-    <dynamicProps />
+
+    <!-- Example - 1 dynamic props-->
+    <dynamicProps 
+    :firstName = "firstName"
+    :lastName = "lastName"
+    />
 </template>
 
 
