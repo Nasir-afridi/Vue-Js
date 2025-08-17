@@ -44,7 +44,11 @@
     :val = "val1"
     />
 
-    <Slots />
+    <Slots>
+        <h1>This is my content</h1>
+        <h2>its coming from the parent component</h2>
+    </Slots>
+
 </template>
 
 
