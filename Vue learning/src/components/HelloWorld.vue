@@ -8,6 +8,7 @@
     import vShow from './07-vShow.vue'
     import vFor from './08-vFor.vue'
     import Props from './09-Props.vue'
+    import dynamicProps from './10-dynamicProps.vue'
 </script>
 
 
@@ -22,6 +23,7 @@
     <vShow />
     <vFor />
     <Props name="jordan"/>
+    <dynamicProps />
 </template>
 
 
