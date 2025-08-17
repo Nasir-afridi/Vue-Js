@@ -7,6 +7,7 @@
     import ConditionalRendering from './06-ConditionalRendering.vue';
     import vShow from './07-vShow.vue'
     import vFor from './08-vFor.vue'
+    import Props from './09-props.vue'
 </script>
 
 
@@ -20,6 +21,7 @@
     <ConditionalRendering />
     <vShow />
     <vFor />
+    <Props />
 </template>
 
 
