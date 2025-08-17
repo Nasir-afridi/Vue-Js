@@ -16,6 +16,11 @@
 
     const firstName = ref('Muhammad');
     const lastName = ref('Nasir')
+
+
+    // Example -2
+    const val1 = ref(3 + 4);
+
 </script>
 
 
@@ -35,6 +40,8 @@
     <dynamicProps 
     :firstName = "firstName"
     :lastName = "lastName"
+    :val = "val1"
+
     />
 </template>
 
