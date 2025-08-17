@@ -5,10 +5,11 @@
     import Ref from './04-Ref.vue';
     import Computed from './05-Computed.vue';
     import ConditionalRendering from './06-ConditionalRendering.vue';
-    import vShow from './07-vShow.vue'
-    import vFor from './08-vFor.vue'
-    import Props from './09-Props.vue'
-    import dynamicProps from './10-dynamicProps.vue'
+    import vShow from './07-vShow.vue';
+    import vFor from './08-vFor.vue';
+    import Props from './09-Props.vue';
+    import dynamicProps from './10-dynamicProps.vue';
+    import Slots from './11-Slots.vue';
 
 
     // Example - 1
@@ -41,8 +42,9 @@
     :firstName = "firstName"
     :lastName = "lastName"
     :val = "val1"
-
     />
+
+    <Slots />
 </template>
 
 
