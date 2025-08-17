@@ -11,6 +11,7 @@
     import dynamicProps from './10-dynamicProps.vue';
     import Slots from './11-Slots.vue';
     import FallbackContentSlots from './12-FallbackContentSlots.vue'
+    import NamedSlot from './13-NamedSlot.vue'
 
 
     // Example - 1
@@ -49,9 +50,17 @@
         <h1>This is my content</h1>
         <h2>its coming from the parent component</h2>
     </Slots>
-    
-    <FallbackContentSlots></FallbackContentSlots>
 
+    <FallbackContentSlots></FallbackContentSlots>
+    <NamedSlot>
+        <template v-slot:one>
+            <h1>{{2+2}}</h1>
+        </template>
+
+        <template v-slot:two>
+            <h1>hi</h1>
+        </template>
+    </NamedSlot>
 </template>
 
 
