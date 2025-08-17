@@ -10,6 +10,7 @@
     import Props from './09-Props.vue';
     import dynamicProps from './10-dynamicProps.vue';
     import Slots from './11-Slots.vue';
+    import FallbackContentSlots from './12-FallbackContentSlots.vue'
 
 
     // Example - 1
@@ -48,6 +49,8 @@
         <h1>This is my content</h1>
         <h2>its coming from the parent component</h2>
     </Slots>
+    
+    <FallbackContentSlots></FallbackContentSlots>
 
 </template>
 
