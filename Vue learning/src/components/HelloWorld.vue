@@ -8,26 +8,29 @@
     import vShow from './07-vShow.vue';
     import vFor from './08-vFor.vue';
     import Props from './09-Props.vue';
+
+     // Example - 1 - dynamic-variables
+    import { provide, ref } from 'vue';
+    const firstName = ref('Muhammad');
+    const lastName = ref('Nasir')
+    // Example - 2 - dynamic-variables
+    const val1 = ref(3 + 4);
+
     import dynamicProps from './10-dynamicProps.vue';
     import Slots from './11-Slots.vue';
     import FallbackContentSlots from './12-FallbackContentSlots.vue'
     import NamedSlot from './13-NamedSlot.vue'
-    import ProvideInject from './14-Provideinject.vue'
+    import ProvideInject from './14-ProvideInject.vue'
 
-
-    // Example - 1
-    import { ref } from 'vue';
-
-    const firstName = ref('Muhammad');
-    const lastName = ref('Nasir')
-
-
-    // Example -2
-    const val1 = ref(3 + 4);
-
+    // without provide inject variables
     const studentName = "Nasir";
     const studentAge = 44;
     const studentLocation = ["earth", "pakistan"]
+
+    // using provide inject.
+    provide('firstName', 'Nasir')
+    provide('age', 10)
+    provide('location', ['pak', 'ind'])
 
 </script>
 
@@ -66,6 +69,7 @@
             <h1>hi</h1>
         </template>
     </NamedSlot>
+    
 <!-- sending data from parent to child Provideinject -->
     <ProvideInject 
         :studentName = "studentName"
