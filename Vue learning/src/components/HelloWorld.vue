@@ -33,7 +33,8 @@
     provide('location', ['pak', 'ind'])
 
     import vueWatchers from './15-vueWatchers.vue'
-    import TemplateRef from './16-TemplateRef.vue'
+    // import TemplateRef from './16-TemplateRef.vue'
+    import FetchingData from './17-FetchingData.vue'
 
 </script>
 
@@ -81,7 +82,8 @@
     />
 
     <vueWatchers />
-    <TemplateRef />
+    <!-- <TemplateRef /> -->
+    <FetchingData />
 </template>
 
 
