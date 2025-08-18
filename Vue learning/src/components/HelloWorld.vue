@@ -28,7 +28,7 @@
     const studentLocation = ["earth", "pakistan"]
 
     // using provide inject.
-    provide('firstName', 'Nasir')
+    provide('firstName', 'Nasir Khan')
     provide('age', 10)
     provide('location', ['pak', 'ind'])
 
