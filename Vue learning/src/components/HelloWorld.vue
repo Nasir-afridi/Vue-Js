@@ -33,6 +33,7 @@
     provide('location', ['pak', 'ind'])
 
     import vueWatchers from './15-vueWatchers.vue'
+    import TemplateRef from './16-TemplateRef.vue'
 
 </script>
 
@@ -80,6 +81,7 @@
     />
 
     <vueWatchers />
+    <TemplateRef />
 </template>
 
 
