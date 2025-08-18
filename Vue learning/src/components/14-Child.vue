@@ -1,4 +1,6 @@
-    <script setup>
+   <!-- ye apny parent Provideinject sy data receive kry using props
+    yane grandparent nyy apny child ko diya pher os child nyy apny child ko diya. -->
+   <script setup>
         defineProps([
             'studentName',
             'studentAge', 
