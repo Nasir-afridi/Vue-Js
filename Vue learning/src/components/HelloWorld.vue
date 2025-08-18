@@ -32,6 +32,8 @@
     provide('age', 10)
     provide('location', ['pak', 'ind'])
 
+    import vueWatchers from './15-vueWatchers.vue'
+
 </script>
 
 
