@@ -12,7 +12,7 @@
     import Slots from './11-Slots.vue';
     import FallbackContentSlots from './12-FallbackContentSlots.vue'
     import NamedSlot from './13-NamedSlot.vue'
-    import ProvideInject from './14-ProvideInject.vue'
+    import ProvideInject from './14-Provideinject.vue'
 
 
     // Example - 1
@@ -24,6 +24,10 @@
 
     // Example -2
     const val1 = ref(3 + 4);
+
+    const studentName = "Nasir";
+    const studentAge = 44;
+    const studentLocation = ["earth", "pakistan"]
 
 </script>
 
@@ -62,7 +66,12 @@
             <h1>hi</h1>
         </template>
     </NamedSlot>
-    <ProvideInject></ProvideInject>
+<!-- sending data from parent to child Provideinject -->
+    <ProvideInject 
+        :studentName = "studentName"
+        :studentAge = "studentAge"
+        :studentLocation = "studentLocation"
+    />
 </template>
 
 
