@@ -12,6 +12,7 @@
     import Slots from './11-Slots.vue';
     import FallbackContentSlots from './12-FallbackContentSlots.vue'
     import NamedSlot from './13-NamedSlot.vue'
+    import ProvideInject from './14-ProvideInject.vue'
 
 
     // Example - 1
@@ -61,6 +62,7 @@
             <h1>hi</h1>
         </template>
     </NamedSlot>
+    <ProvideInject></ProvideInject>
 </template>
 
 
