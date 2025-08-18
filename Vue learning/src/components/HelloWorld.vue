@@ -78,6 +78,8 @@
         :studentAge = "studentAge"
         :studentLocation = "studentLocation"
     />
+
+    <vueWatchers />
 </template>
 
 
